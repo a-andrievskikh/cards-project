@@ -11,13 +11,27 @@
 }
 
 .primary {
+  display: flex;
+  padding: 6px 28px;
+  min-width: 150px;
+  min-height: 36px;
+  gap: 10px;
+  border-radius: 4px;
+  justify-content: center;
   background-color: var(--color-accent-500);
 }
 
 .secondary {
+  display: flex;
+  padding: 6px 28px;
+  min-width: 169px;
+  min-height: 36px;
+  gap: 10px;
+  border-radius: 4px;
   background-color: var(--color-dark-300);
 }
 
 .fullWidth {
+
   width: 100%;
 }

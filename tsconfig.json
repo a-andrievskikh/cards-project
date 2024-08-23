@@ -34,7 +34,9 @@
     }
   },
   "include": [
-    "src"
+    "src",
+    ".storybook",
+    "src/**/*.stories.ts?x"
   ],
   "references": [
     {
