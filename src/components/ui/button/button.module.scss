@@ -1,9 +1,12 @@
 .button {
   all: unset;
+
   cursor: pointer;
+
   box-sizing: border-box;
-  color: inherit;
+
   font-family: inherit;
+  color: inherit;
 
   &:focus-visible {
     outline: 2px solid var(--color-info-500);
@@ -12,23 +15,27 @@
 
 .primary {
   display: flex;
-  padding: 6px 28px;
+  gap: 10px;
+  justify-content: center;
+
   min-width: 150px;
   min-height: 36px;
-  gap: 10px;
-  border-radius: 4px;
-  justify-content: center;
+  padding: 6px 28px;
+
   background-color: var(--color-accent-500);
+  border-radius: 4px;
 }
 
 .secondary {
   display: flex;
-  padding: 6px 28px;
+  gap: 10px;
+
   min-width: 169px;
   min-height: 36px;
-  gap: 10px;
-  border-radius: 4px;
+  padding: 6px 28px;
+
   background-color: var(--color-dark-300);
+  border-radius: 4px;
 }
 
 .fullWidth {
