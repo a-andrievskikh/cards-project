@@ -3,15 +3,15 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Button } from './index'
 
 const meta: Meta<typeof Button> = {
-  title: 'Components/Button',
-  component: Button,
-  tags: ['autodocs'],
   argTypes: {
     variant: {
-      options: ['primary', 'secondary'],
       control: { type: 'radio' },
+      options: ['primary', 'secondary'],
     },
   },
+  component: Button,
+  tags: ['autodocs'],
+  title: 'Components/Button',
 } satisfies Meta<typeof Button>
 
 export default meta
@@ -19,33 +19,33 @@ type Story = StoryObj<typeof Button>
 
 export const Primary: Story = {
   args: {
-    variant: 'primary',
     children: 'Primary Button',
     disabled: false,
+    variant: 'primary',
   },
 }
 
 export const Secondary: Story = {
   args: {
-    variant: 'secondary',
     children: 'Secondary Button',
     disabled: false,
+    variant: 'secondary',
   },
 }
 
 export const FullWidth: Story = {
   args: {
-    variant: 'primary',
     children: 'Full Width Primary Button',
     disabled: false,
     fullWidth: true,
+    variant: 'primary',
   },
 }
 
 export const AsLink: Story = {
   args: {
-    variant: 'primary',
-    children: 'Link that looks like a button',
     as: 'a',
+    children: 'Link that looks like a button',
+    variant: 'primary',
   },
 }
