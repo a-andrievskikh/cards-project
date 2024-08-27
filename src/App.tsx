@@ -3,10 +3,10 @@ import { Button } from '@/components/ui/button'
 export function App() {
   return (
     <div>
-      <Button variant="primary" as="a" href={'/link'}>
+      <Button as={'a'} href={'/link'} variant={'primary'}>
         Hello
       </Button>
-      <Button variant="primary" href={'/link'}>
+      <Button href={'/link'} variant={'primary'}>
         Hello
       </Button>
     </div>
