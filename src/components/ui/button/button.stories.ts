@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Button } from './index'
+import { Button } from './'
 
-const meta: Meta<typeof Button> = {
+const meta = {
   argTypes: {
     variant: {
       control: { type: 'radio' },
@@ -15,7 +15,7 @@ const meta: Meta<typeof Button> = {
 } satisfies Meta<typeof Button>
 
 export default meta
-type Story = StoryObj<typeof Button>
+type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
