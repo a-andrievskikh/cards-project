@@ -7,7 +7,6 @@ export type ButtonProps<T extends ElementType = 'button'> = {
   children: ReactNode
   className?: string
   fullWidth?: boolean
-  href?: string
   variant?: 'primary' | 'secondary'
 } & ComponentPropsWithoutRef<T>
 
