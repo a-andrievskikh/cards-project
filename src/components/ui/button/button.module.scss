@@ -7,6 +7,10 @@
 
   font-family: inherit;
   color: inherit;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-info-500);
+  }
 }
 
 .primary {
@@ -20,32 +24,6 @@
 
   background-color: var(--color-accent-500);
   border-radius: 4px;
-  box-shadow: 0 4px 18px 0 #8c61ff59;
-
-  &:active {
-    background-color: var(--color-accent-700);
-    box-shadow: 0 4px 18px 0 #8c61ff59;
-  }
-
-  &:hover {
-    background-color: var(--color-accent-300);
-    box-shadow: 0 4px 18px 0 #8c61ff59;
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--color-info-500);
-  }
-
-  &:focus {
-    background-color: var(--color-accent-500);
-    outline: 2px solid var(--color-info-700);
-    box-shadow: 0 4px 18px 0 #8c61ff59;
-  }
-
-  &:disabled {
-    background-color: var(--color-accent-900);
-    box-shadow: 0 4px 18px 0 #8c61ff59;
-  }
 }
 
 .secondary {
