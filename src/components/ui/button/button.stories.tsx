@@ -1,8 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
+import { Logout } from '@/assets'
+
 import { Button } from './'
 
-const meta = {
+const meta: Meta<typeof Button> = {
   argTypes: {
     variant: {
       control: { type: 'radio' },
@@ -12,7 +14,7 @@ const meta = {
   component: Button,
   tags: ['autodocs'],
   title: 'Components/Button',
-} satisfies Meta<typeof Button>
+}
 
 export default meta
 type Story = StoryObj<typeof meta>
@@ -20,6 +22,19 @@ type Story = StoryObj<typeof meta>
 export const Primary: Story = {
   args: {
     children: 'Primary Button',
+    disabled: false,
+    variant: 'primary',
+  },
+}
+
+export const PrimaryWithIcon: Story = {
+  args: {
+    children: (
+      <>
+        <Logout />
+        Primary With Icon
+      </>
+    ),
     disabled: false,
     variant: 'primary',
   },
