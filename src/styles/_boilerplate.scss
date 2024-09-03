@@ -11,12 +11,34 @@ html {
   box-sizing: border-box;
 }
 
+button {
+  all: unset;
+
+  cursor: pointer;
+  user-select: none;
+
+  display: inline-flex;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
 input,
-button,
 select,
 textarea,
 optgroup,
 option {
+  box-sizing: border-box;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
