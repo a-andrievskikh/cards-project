@@ -1,11 +1,5 @@
 export const Logout = () => (
-  <svg
-    fill={'#fff'}
-    height={'1rem'}
-    viewBox={'0 0 1rem 1rem'}
-    width={'1rem'}
-    xmlns={'http://www.w3.org/2000/svg'}
-  >
+  <svg fill={'none'} height={16} width={16} xmlns={'http://www.w3.org/2000/svg'}>
     <g clipPath={'url(#clip0_5661_2607)'}>
       <path
         d={
@@ -22,7 +16,7 @@ export const Logout = () => (
     </g>
     <defs>
       <clipPath id={'clip0_5661_2607'}>
-        <rect fill={'#fff'} height={'1rem'} width={'1rem'} />
+        <rect fill={'#fff'} height={16} width={16} />
       </clipPath>
     </defs>
   </svg>
