@@ -25,11 +25,10 @@ export const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) 
     ...restProps
   } = props
 
+  const classNames = clsx(s.button, s[variant], fullWidth && s.fullWidth, className)
+
   return (
-    <Component
-      className={clsx(s.button, s[variant], fullWidth && s.fullWidth, className)}
-      {...restProps}
-    >
+    <Component className={classNames} {...restProps}>
       {withIcon && <Logout />}
       {children || 'some button'}
     </Component>
