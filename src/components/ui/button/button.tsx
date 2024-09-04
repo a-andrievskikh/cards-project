@@ -1,5 +1,6 @@
 import { ComponentPropsWithoutRef, ElementType, PropsWithChildren } from 'react'
 
+import { Logout } from '@/assets'
 import { clsx } from 'clsx'
 
 import s from './button.module.scss'
@@ -10,14 +11,17 @@ export type ButtonProps<T extends ElementType = 'button'> = ComponentPropsWithou
     className?: string
     fullWidth?: boolean
     variant?: 'primary' | 'secondary'
+    withIcon?: boolean
   }>
 
 export const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) => {
   const {
     as: Component = 'button',
+    children,
     className,
     fullWidth,
     variant = 'primary',
+    withIcon = false,
     ...restProps
   } = props
 
@@ -25,6 +29,9 @@ export const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) 
     <Component
       className={clsx(s.button, s[variant], fullWidth && s.fullWidth, className)}
       {...restProps}
-    />
+    >
+      {withIcon && <Logout />}
+      {children || 'some button'}
+    </Component>
   )
 }
