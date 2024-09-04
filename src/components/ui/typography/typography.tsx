@@ -24,7 +24,7 @@ export type TypographyProps<T extends ElementType = 'p'> = ComponentPropsWithout
   }>
 
 export const Typography = <T extends ElementType = 'p'>(props: TypographyProps<T>) => {
-  const { as: Component = 'p', children, className, variant = 'body1', ...restProps } = props
+  const { as: Component = 'p', className, variant = 'body1', ...restProps } = props
 
   const classNames = clsx(s.text, s[variant], className)
 
