@@ -20,9 +20,9 @@ export const DefaultCard: Story = {
   args: {
     children: <Typography variant={'h1'}>Card</Typography>,
     style: {
-      height: '300px',
+      height: '552px',
       padding: '24px',
-      width: '300px',
+      width: '420px',
     },
   },
 }
