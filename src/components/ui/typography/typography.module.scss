@@ -7,6 +7,10 @@
   color: var(--color-light-100);
 }
 
+.large {
+  @include typography(var(--font-size-xxl), var(--line-height-l), var(--font-weight-bold));
+}
+
 .h1 {
   @include typography(var(--font-size-xxl), var(--line-height-l), var(--font-weight-bold));
 }
@@ -63,4 +67,10 @@
   cursor: pointer;
   color: var(--color-info-500);
   text-decoration: underline;
+}
+
+.error {
+  @include typography(var(--font-size-xs), var(--line-height-m), var(--font-weight-regular));
+
+  color: var(--color-danger-300);
 }
