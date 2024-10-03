@@ -10,7 +10,8 @@
     "lint": "eslint src --no-error-on-unmatched-pattern --fix && stylelint --fix src/{,*/}*.{scss,css} --allow-empty-input",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "generate": "npx @svgr/cli --out-dir src/assets/icons/components --jsx-runtime automatic --typescript --ref --memo --icon --replace-attr-values \"#000\"=\"currentcolor\" -- src/assets/icons/svgs && npm run format && npm run lint"
   },
   "dependencies": {
     "@fontsource/roboto": "^5.0.14",
@@ -36,6 +37,7 @@
     "@storybook/react-vite": "^8.2.9",
     "@storybook/test": "^8.2.9",
     "@storybook/theming": "^8.2.9",
+    "@svgr/cli": "^8.1.0",
     "@types/node": "^22.4.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
