@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef, ElementType, PropsWithChildren } from 'react'
 
-import { Logout } from '@/assets/icons'
+import { Logout } from '@/assets'
 import { clsx } from 'clsx'
 
 import s from './button.module.scss'
